@@ -1,69 +1,79 @@
-# React + TypeScript + Vite
+# 🍰 Não Resistir! - Cardápio Digital da Doceria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o cardápio digital da doceria **Não Resistir!**, desenvolvido com React + TypeScript e Vite. O objetivo é facilitar a visualização de produtos, pedidos por WhatsApp e organização entre produtos à pronta entrega, por encomenda e novidades do mês.
 
-Currently, two official plugins are available:
+🔗 **Acesse o site online:**  
+[https://doceria-nao-resisti.vercel.app/](https://doceria-nao-resisti.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Imagens de Exemplo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Home Page](./public/img/capa-home.jpg)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ✨ Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Página inicial com três opções: Pronta Entrega, Encomendas e Novidades
+- Design leve, com cores suaves e responsivo
+- Navegação simples e agradável
+- Imagens de produtos integradas
+- Futuras funcionalidades:
+  - Integração com WhatsApp
+  - Carrinho de compras
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [React.js](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- CSS puro (estilização manual)
+
+---
+
+## 🛠️ Como rodar localmente
+
+```bash
+# Clone o projeto
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+# Acesse a pasta do projeto
+cd nome-do-repositorio
+
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📂 Estrutura de pastas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+/public
+  └── img/
+      ├── delivery.jpg
+      ├── encomendas.jpg
+      ├── novidades.png
+      └── logo.png
+
+/src
+  ├── App.tsx
+  ├── main.tsx
+  ├── pages/
+      └── Home.tsx
+  └── styles/
+      └── Home.css
+```
+
+---
+
+## ✍️ Autor
+
+Projeto desenvolvido por **Douglas** para a doceria da sua irmã 🍩  
+Sinta-se à vontade para contribuir ou sugerir melhorias!
