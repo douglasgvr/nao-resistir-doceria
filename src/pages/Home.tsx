@@ -1,0 +1,41 @@
+import { Link } from "react-router-dom";
+import "./Home.css";
+
+export function Home() {
+  return (
+    <div className="home-container">
+      <img src="/src/assets/img/logo.png" alt="" />
+      <div className="logo">Não Resistir!</div>
+      <p className="bem-vindo">
+        Seja bem-vindo(a)!
+        <br />
+        Escolha como vai preferir sua sobremesa.
+        <br />
+        Estamos oferecendo praticidade e sabor em cada detalhe.
+      </p>
+
+      {/* OPÇÕES */}
+      <div className="opcoes">
+        <div className="opcao">
+          <img src="/src/assets/img/delivery.jpg" alt="Delivery" />
+          <h2>Delivery</h2>
+          <Link to="/pronta-entrega">Ver</Link>
+        </div>
+        <div className="opcao">
+          <img src="/src/assets/img/encomendas.jpg" alt="Encomendas" />
+          <h2>Encomendas</h2>
+          <Link to="/encomendas">Ver</Link>
+        </div>
+        <div className="opcao">
+          <img src="/src/assets/img/novidades.png" alt="Novidades" />
+          <h2>Novidades do Mês</h2>
+          <Link to="/novidades">Ver</Link>
+        </div>
+      </div>
+
+      <p className="final-texto">Escolha a melhor opção que atende você</p>
+
+      <footer className="footer">@Criado por Douglas Coelho</footer>
+    </div>
+  );
+}
