@@ -5,7 +5,7 @@ export function Home() {
   return (
     <div className="home-container">
       <img src="/src/assets/img/logo.png" alt="" />
-      <div className="logo">Não Resistir!</div>
+      <h1>Não resisti!</h1>
       <p className="bem-vindo">
         Seja bem-vindo(a)!
         <br />
@@ -19,17 +19,17 @@ export function Home() {
         <div className="opcao">
           <img src="/src/assets/img/delivery.jpg" alt="Delivery" />
           <h2>Delivery</h2>
-          <Link to="/pronta-entrega">Ver</Link>
+          <Link to="/pronta-entrega">Cardápio</Link>
         </div>
         <div className="opcao">
           <img src="/src/assets/img/encomendas.jpg" alt="Encomendas" />
           <h2>Encomendas</h2>
-          <Link to="/encomendas">Ver</Link>
+          <Link to="/encomendas">Cardápio</Link>
         </div>
         <div className="opcao">
           <img src="/src/assets/img/novidades.png" alt="Novidades" />
           <h2>Novidades do Mês</h2>
-          <Link to="/novidades">Ver</Link>
+          <Link to="/novidades">Cardápio</Link>
         </div>
       </div>
 
