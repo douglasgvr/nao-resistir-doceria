@@ -9,7 +9,7 @@ Este é o cardápio digital da doceria **Não Resistir!**, desenvolvido com Reac
 
 ## 📸 Imagens de Exemplo
 
-![Home Page](./public/img/capa-home.jpg)
+![Home Page](./public/capa-home.jpg)
 
 ---
 
