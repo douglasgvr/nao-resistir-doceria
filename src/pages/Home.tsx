@@ -4,7 +4,7 @@ import "./Home.css";
 export function Home() {
   return (
     <div className="home-container">
-      <img src="/public/logo.png" alt="" />
+      <img src="/logo.png" alt="" />
       <h1>Não resisti!</h1>
       <p className="bem-vindo">
         Seja bem-vindo(a)!
@@ -17,17 +17,17 @@ export function Home() {
       {/* OPÇÕES */}
       <div className="opcoes">
         <div className="opcao">
-          <img src="/public/delivery.jpg" alt="Delivery" />
+          <img src="/delivery.jpg" alt="Delivery" />
           <h2>Delivery</h2>
           <Link to="/pronta-entrega">Cardápio</Link>
         </div>
         <div className="opcao">
-          <img src="/public/encomendas.jpg" alt="Encomendas" />
+          <img src="/encomendas.jpg" alt="Encomendas" />
           <h2>Encomendas</h2>
           <Link to="/encomendas">Cardápio</Link>
         </div>
         <div className="opcao">
-          <img src="/public/novidades.png" alt="Novidades" />
+          <img src="/novidades.png" alt="Novidades" />
           <h2>Novidades do Mês</h2>
           <Link to="/novidades">Cardápio</Link>
         </div>
