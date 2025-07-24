@@ -1,0 +1,152 @@
+:root {
+  --cor-principal: #d2691e; /* Laranja queimado */
+  --cor-secundaria: #fff8f0; /* Gelo claro */
+  --cor-texto: #4a2c17; /* Marrom suave */
+  --cor-hover: #b65c19;
+}
+
+body,
+.pagina-pronta-entrega {
+  background-color: #fff;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--cor-texto);
+  min-height: 100vh;
+}
+
+.pagina-pronta-entrega {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.botao-voltar {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: bold;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.titulo-pagina {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--cor-principal);
+  margin-left: auto;
+}
+
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.categoria {
+  padding: 8px 16px;
+  background-color: var(--cor-principal);
+  color: white;
+  border-radius: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.categoria:hover {
+  background-color: var(--cor-hover);
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.detalhes-produto {
+  flex: 1;
+}
+
+.nome-produto {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.descricao-produto {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.preco-produto {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-principal);
+}
+
+.foto-produto {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: 16px;
+}
+
+.rodape {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.quantidade-total,
+.preco-total {
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.botao-ver-carrinho {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-ver-carrinho:hover {
+  background-color: var(--cor-hover);
+}
